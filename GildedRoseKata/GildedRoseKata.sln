@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose.CSharp.Console", "GildedRose.CSharp.Console\GildedRose.CSharp.Console.csproj", "{B2AD4D1F-80DC-4F31-9F6E-BACCC2363C9E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GildedRose.VB.Console", "GildedRose.VB.Console\GildedRose.VB.Console.vbproj", "{C6792313-EFDB-4FAE-9F24-FB418D0EFA1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2AD4D1F-80DC-4F31-9F6E-BACCC2363C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2AD4D1F-80DC-4F31-9F6E-BACCC2363C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2AD4D1F-80DC-4F31-9F6E-BACCC2363C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2AD4D1F-80DC-4F31-9F6E-BACCC2363C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6792313-EFDB-4FAE-9F24-FB418D0EFA1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6792313-EFDB-4FAE-9F24-FB418D0EFA1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6792313-EFDB-4FAE-9F24-FB418D0EFA1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6792313-EFDB-4FAE-9F24-FB418D0EFA1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

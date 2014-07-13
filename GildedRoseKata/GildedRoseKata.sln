@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose.CSharp.Console",
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GildedRose.VB.Console", "GildedRose.VB.Console\GildedRose.VB.Console.vbproj", "{C6792313-EFDB-4FAE-9F24-FB418D0EFA1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose.ASP.WebUI", "GildedRose.ASP\GildedRose.ASP.WebUI.csproj", "{9FA77595-32BC-4B10-BCC6-197B024CB799}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C6792313-EFDB-4FAE-9F24-FB418D0EFA1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6792313-EFDB-4FAE-9F24-FB418D0EFA1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6792313-EFDB-4FAE-9F24-FB418D0EFA1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FA77595-32BC-4B10-BCC6-197B024CB799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FA77595-32BC-4B10-BCC6-197B024CB799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FA77595-32BC-4B10-BCC6-197B024CB799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FA77595-32BC-4B10-BCC6-197B024CB799}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

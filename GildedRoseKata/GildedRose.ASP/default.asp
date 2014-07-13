@@ -1,4 +1,5 @@
 ﻿<%
+    Response.Write("OMGHAI")
     Dim Items
     Set Items = server.createObject("Scripting.Dictionary")
 
@@ -90,13 +91,42 @@
     Set app = New Program
     Dim objItem
     Set objItem = New Item
-    stop
     objItem.Name = "+5 Dexterity Vest"
     objItem.Sellin = 10
     objItem.Quality = 20
+    Items.Add Items.Count, objItem
+ 
+    Set objItem = New Item
+    objItem.Name = "Aged Brie"
+    objItem.Sellin = 2
+    objItem.Quality = 0
+    Items.Add Items.Count, objItem
 
-    Items.Add 0, objItem
-   
+    Set objItem = New Item
+    objItem.Name = "Elixir of the Mongoose"
+    objItem.Sellin = 5
+    objItem.Quality = 7
+    Items.Add Items.Count, objItem
+
+    
+    Set objItem = New Item
+    objItem.Name = "Sulfuras, Hand of Ragnaros"
+    objItem.Sellin = 0
+    objItem.Quality = 80
+    Items.Add Items.Count, objItem
+
+    Set objItem = New Item
+    objItem.Name = "Backstage passes to a TAFKAL80ETC concert"
+    objItem.Sellin = 15
+    objItem.Quality = 20
+    Items.Add Items.Count, objItem
+
+    Set objItem = New Item
+    objItem.Name = "Conjured Mana Cake"
+    objItem.Sellin = 3
+    objItem.Quality = 6
+    Items.Add Items.Count, objItem
+
     app.UpdateQuality()
 %>
 <!DOCTYPE html>
@@ -105,6 +135,6 @@
     <title></title>
 </head>
 <body>
-
+    
 </body>
 </html>

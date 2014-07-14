@@ -63,12 +63,6 @@
     <Content Include="default.asp" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="GildedRose.UnitTests\include\ASPUnit.asp" />
-    <Content Include="GildedRose.UnitTests\include\ASPUnit.css" />
-    <Content Include="GildedRose.UnitTests\include\ASPUnitRunner.asp" />
-    <Content Include="GildedRose.UnitTests\include\ASPUnitRunner.js" />
-    <Content Include="GildedRose.UnitTests\UpdateQualityTests.asp" />
-    <Content Include="GildedRose.UnitTests\TestASPUnit.asp" />
     <Content Include="web.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>

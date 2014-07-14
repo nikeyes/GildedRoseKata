@@ -1,9 +1,15 @@
 ﻿<%
     Response.Write("OMGHAI")
-    Dim Items
-    Set Items = server.createObject("Scripting.Dictionary")
+    
 
       Class Program
+
+        Dim Items
+
+        Public Sub Class_Initialize
+            Set Items = server.createObject("Scripting.Dictionary")     
+        End Sub 
+
         Public Sub UpdateQuality()
             Dim i
             For i = 0 To Items.Count - 1 Step i + 1
@@ -87,47 +93,47 @@
 
 
    
-    Dim app
-    Set app = New Program
+    Dim objApp
+    Set objApp = New Program
     Dim objItem
     Set objItem = New Item
     objItem.Name = "+5 Dexterity Vest"
     objItem.Sellin = 10
     objItem.Quality = 20
-    Items.Add Items.Count, objItem
+    objApp.Items.Add objApp.Items.Count, objItem
  
     Set objItem = New Item
     objItem.Name = "Aged Brie"
     objItem.Sellin = 2
     objItem.Quality = 0
-    Items.Add Items.Count, objItem
+    objApp.Items.Add objApp.Items.Count, objItem
 
     Set objItem = New Item
     objItem.Name = "Elixir of the Mongoose"
     objItem.Sellin = 5
     objItem.Quality = 7
-    Items.Add Items.Count, objItem
+    objApp.Items.Add objApp.Items.Count, objItem
 
     
     Set objItem = New Item
     objItem.Name = "Sulfuras, Hand of Ragnaros"
     objItem.Sellin = 0
     objItem.Quality = 80
-    Items.Add Items.Count, objItem
+    objApp.Items.Add objApp.Items.Count, objItem
 
     Set objItem = New Item
     objItem.Name = "Backstage passes to a TAFKAL80ETC concert"
     objItem.Sellin = 15
     objItem.Quality = 20
-    Items.Add Items.Count, objItem
+    objApp.Items.Add objApp.Items.Count, objItem
 
     Set objItem = New Item
     objItem.Name = "Conjured Mana Cake"
     objItem.Sellin = 3
     objItem.Quality = 6
-    Items.Add Items.Count, objItem
+    objApp.Items.Add objApp.Items.Count, objItem
 
-    app.UpdateQuality()
+    objApp.UpdateQuality()
 %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -135,6 +141,6 @@
     <title></title>
 </head>
 <body>
-    
+    Tenemos <%= objApp.Items.Count %> Items
 </body>
 </html>

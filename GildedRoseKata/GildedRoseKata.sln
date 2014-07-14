@@ -9,6 +9,11 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GildedRose.VB.Console", "Gi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose.ASP.WebUI", "GildedRose.ASP\GildedRose.ASP.WebUI.csproj", "{9FA77595-32BC-4B10-BCC6-197B024CB799}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enunciado", "Enunciado", "{D05F24CB-D6C3-4743-84FC-8296F6360EEF}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\Habitaclia\MejoraContinua\Refactoring\GildedRoseKata.docx = ..\..\..\..\..\Habitaclia\MejoraContinua\Refactoring\GildedRoseKata.docx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -445,6 +445,44 @@
 	}
 
 	[TestMethod]
+	[TestCategory("Dado_Un_Item_Sulfuras_Cuando_Se_Actualiza_Tests")]
+	public void Dado_Un_Item_Sulfuras_Cuando_Se_Actualiza_Tests_Entonces_Sellin_No_DisminuyeTest()
+	{
+		StringBuilder urlAspUnitTest = new StringBuilder(); 
+		urlAspUnitTest.Append(BASE_URL);
+		urlAspUnitTest.Append("&cboTestContainers=");
+		urlAspUnitTest.Append("Dado_Un_Item_Sulfuras_Cuando_Se_Actualiza_Tests");            
+		urlAspUnitTest.Append("&cboTestCases=");
+		urlAspUnitTest.Append("Entonces_Sellin_No_Disminuye");
+		urlAspUnitTest.Append("&chkShowSuccess=on");
+		urlAspUnitTest.Append("&cmdRun=Run%20Tests");
+
+
+		WebRequest request = WebRequest.Create(urlAspUnitTest.ToString());
+
+		ICredentials requestCredentials = CredentialCache.DefaultCredentials;
+		request.Credentials = requestCredentials;
+
+		using (WebResponse response = request.GetResponse())
+		{
+			using (StreamReader stream = new StreamReader(response.GetResponseStream()))
+			{
+				string json = stream.ReadToEnd();
+
+				List<TestResult> results = JsonConvert.DeserializeObject<List<TestResult>>(json);;
+
+				foreach (TestResult result in results)
+				{
+					Assert.IsTrue(result.ResultType == "Success", result.Description);
+				}
+				//Assert.IsFalse(html.Contains("Failure"));
+				//Assert.IsFalse(html.Contains("Error"));
+			}
+		}
+
+	}
+
+	[TestMethod]
 	[TestCategory("TEMPLATE_AllFail_Tests")]
 	public void TEMPLATE_AllFail_Tests_TestAssertsTypesTest()
 	{

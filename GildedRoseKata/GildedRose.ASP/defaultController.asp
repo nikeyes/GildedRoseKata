@@ -1,4 +1,6 @@
-﻿<%
+﻿<!-- #include virtual="UpdateQualityItemServiceFactory.asp"-->
+<!-- #include virtual="UpdateQualityStandardItemService.asp"-->
+<%
       Class Program
 
         Dim Items
@@ -10,55 +12,13 @@
         Public Sub UpdateQuality()
             Dim i
             Dim item
+            Dim service
+            Dim factory
+            Set factory = new UpdateQualityItemServiceFactory
             For i = 0 To Items.Count - 1 Step i + 1
-                Set item = Items(i)
-                If item.Name <> "Aged Brie" And item.Name <> "Backstage passes to a TAFKAL80ETC concert" Then
-                    If item.Quality > 0 Then
-                        If item.Name <> "Sulfuras, Hand of Ragnaros" Then
-                            item.Quality = item.Quality - 1
-                        End If
-                    End If
-                Else
-                    If item.Quality < 50 Then
-                        item.Quality = item.Quality + 1
-
-                        If item.Name = "Backstage passes to a TAFKAL80ETC concert" Then
-                            If item.Sellin < 11 Then
-                                If item.Quality < 50 Then
-                                    item.Quality = item.Quality + 1
-                                End If
-                            End If
-
-                            If item.Sellin < 6 Then
-                                If item.Quality < 50 Then
-                                    item.Quality = item.Quality + 1
-                                End If
-                            End If
-                        End If
-                    End If
-                End If
-
-                If item.Name <> "Sulfuras, Hand of Ragnaros" Then
-                    item.Sellin = item.Sellin - 1
-                End If
-
-                If item.Sellin < 0 Then
-                    If item.Name <> "Aged Brie" Then
-                        If item.Name <> "Backstage passes to a TAFKAL80ETC concert" Then
-                            If item.Quality > 0 Then
-                                If item.Name <> "Sulfuras, Hand of Ragnaros" Then
-                                    item.Quality = item.Quality - 1
-                                End If
-                            End If
-                        Else
-                            item.Quality = item.Quality - item.Quality
-                        End If
-                    Else
-                        If item.Quality < 50 Then
-                            item.Quality = item.Quality + 1
-                        End If
-                    End If
-                End If
+                 Set item = Items(i)
+                 Set service = factory.CreateUpdateQualityItemService(item)
+                 service.UpdateItem(item)
             Next
         End Sub
 

@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="defaultController.asp" />
+    <Content Include="UpdateQualityItemServiceFactory.asp" />
     <Content Include="UpdateQualityStandardItemService.asp" />
     <Content Include="web.config" />
     <None Include="web.Debug.config">

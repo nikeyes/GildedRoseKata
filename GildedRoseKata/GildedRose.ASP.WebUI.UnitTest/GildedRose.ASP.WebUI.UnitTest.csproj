@@ -68,6 +68,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Dado_Un_Item_AgedBrie_Cuando_Se_Actualiza_Tests.asp" />
     <Content Include="Dado_Un_Item_Standard_Cuando_Se_Actualiza_Tests.asp" />
     <Content Include="TEMPLATE_AllOK_Tests.asp" />
     <Content Include="TestEngine\include\ASPUnit.asp" />

@@ -1,4 +1,3 @@
-<!-- #include virtual="defaultController.asp"-->
 <%
 Class Dado_Un_Item_Standard_Cuando_Se_Actualiza_Tests
 

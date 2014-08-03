@@ -1,0 +1,74 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #>
+<#@ include file="ProjectHelpers.tt" #>
+<#@ output extension=".asp" #>
+<%
+Option Explicit
+%>
+<!-- #include file="include/ASPUnitRunnerJSON.asp"-->
+
+<# 
+	String currentDir = GetProjectPath();
+	List<String> testCases = GetAllTestCases(currentDir);
+	GenerateIncludes(testCases); 
+#>
+<%
+	Dim oRunner
+	Set oRunner = New UnitRunnerJSON
+<#
+	AddTestContainers(testCases);
+#>
+	
+	oRunner.Display()
+%>
+
+<#+
+public void GenerateIncludes(List<String> testCases)
+{
+	String name =  GetProjectName();
+	foreach (String testCaseWithExtension in testCases)
+	{
+
+#>
+<!-- #include virtual="<#=name#>/<#=testCaseWithExtension#>"-->
+<#+
+	}
+
+}
+
+public void AddTestContainers(List<String> testCases)
+{
+	
+	foreach (String testCaseWithExtension in testCases)
+	{
+		String testCase = testCaseWithExtension.Replace(".asp", "");	
+#>
+	oRunner.AddTestContainer New <#=testCase#>
+<#+
+	}
+}
+
+public List<String> GetAllTestCases(String currentDir)
+{
+
+	List<String> testCaseList = new List<String>();
+
+    DirectoryInfo dirInfo = new DirectoryInfo(currentDir);
+    FileInfo[] files = dirInfo.GetFiles("*Tests.asp");
+    
+    for (int i=0; i < files.Length; i++)
+    {
+        FileInfo file = files[i];
+        String fileName = file.Name;
+        testCaseList.Add(fileName);
+    }
+
+    return testCaseList;
+            
+}
+#>

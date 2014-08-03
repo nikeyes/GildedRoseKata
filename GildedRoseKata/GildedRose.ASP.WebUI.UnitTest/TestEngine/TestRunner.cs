@@ -369,15 +369,15 @@
 	}
 
 	[TestMethod]
-	[TestCategory("Dado_Un_Item_Sulfuras_Cuando_Se_Actualiza_Tests")]
-	public void Dado_Un_Item_Sulfuras_Cuando_Se_Actualiza_Tests_Entonces_Calidad_Nunca_DisminuyeTest()
+	[TestCategory("Dado_Un_Item_Standard_Cuando_Se_Actualiza_Tests")]
+	public void Dado_Un_Item_Standard_Cuando_Se_Actualiza_Tests_Entonces_Sellin_Disminuye_En_1Test()
 	{
 		StringBuilder urlAspUnitTest = new StringBuilder(); 
 		urlAspUnitTest.Append(BASE_URL);
 		urlAspUnitTest.Append("&cboTestContainers=");
-		urlAspUnitTest.Append("Dado_Un_Item_Sulfuras_Cuando_Se_Actualiza_Tests");            
+		urlAspUnitTest.Append("Dado_Un_Item_Standard_Cuando_Se_Actualiza_Tests");            
 		urlAspUnitTest.Append("&cboTestCases=");
-		urlAspUnitTest.Append("Entonces_Calidad_Nunca_Disminuye");
+		urlAspUnitTest.Append("Entonces_Sellin_Disminuye_En_1");
 		urlAspUnitTest.Append("&chkShowSuccess=on");
 		urlAspUnitTest.Append("&cmdRun=Run%20Tests");
 
@@ -407,15 +407,15 @@
 	}
 
 	[TestMethod]
-	[TestCategory("Dado_Un_UpdateQualityStandardItemService_Cuando_Se_Actualiza_Tests")]
-	public void Dado_Un_UpdateQualityStandardItemService_Cuando_Se_Actualiza_Tests_Entonces_Calidad_Item_Menos_1Test()
+	[TestCategory("Dado_Un_Item_Sulfuras_Cuando_Se_Actualiza_Tests")]
+	public void Dado_Un_Item_Sulfuras_Cuando_Se_Actualiza_Tests_Entonces_Calidad_Nunca_DisminuyeTest()
 	{
 		StringBuilder urlAspUnitTest = new StringBuilder(); 
 		urlAspUnitTest.Append(BASE_URL);
 		urlAspUnitTest.Append("&cboTestContainers=");
-		urlAspUnitTest.Append("Dado_Un_UpdateQualityStandardItemService_Cuando_Se_Actualiza_Tests");            
+		urlAspUnitTest.Append("Dado_Un_Item_Sulfuras_Cuando_Se_Actualiza_Tests");            
 		urlAspUnitTest.Append("&cboTestCases=");
-		urlAspUnitTest.Append("Entonces_Calidad_Item_Menos_1");
+		urlAspUnitTest.Append("Entonces_Calidad_Nunca_Disminuye");
 		urlAspUnitTest.Append("&chkShowSuccess=on");
 		urlAspUnitTest.Append("&cmdRun=Run%20Tests");
 

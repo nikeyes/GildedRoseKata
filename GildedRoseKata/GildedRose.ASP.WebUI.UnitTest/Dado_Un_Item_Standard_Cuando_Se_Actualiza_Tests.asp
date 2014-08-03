@@ -2,7 +2,7 @@
 Class Dado_Un_Item_Standard_Cuando_Se_Actualiza_Tests
 
 	Public Function TestCaseNames()
-		TestCaseNames = Array("Entonces_Calidad_Item_Menos_1, Y_Pasada_Fecha_Venta_Entonces_Calidad_Item_Menos_2, Entonces_Calidad_Nunca_Menor_Cero")
+		TestCaseNames = Array("Entonces_Calidad_Item_Menos_1, Y_Pasada_Fecha_Venta_Entonces_Calidad_Item_Menos_2, Entonces_Calidad_Nunca_Menor_Cero, Entonces_Sellin_Disminuye_En_1")
 	End Function
 
 	Public Sub SetUp()
@@ -83,6 +83,30 @@ Class Dado_Un_Item_Standard_Cuando_Se_Actualiza_Tests
 		'ASSERT
 		
 		oTestResult.AssertEquals expectedQuality, actualQuality, "Error Item Standard Actualizar Calidad Menos que Cero"
+	End Sub
+
+    Public Sub Entonces_Sellin_Disminuye_En_1(oTestResult)
+		'ARRANGE
+		Dim expectedSellin 
+		expectedSellin = 10
+
+        Dim sut
+        Set sut = New Program
+        Dim objItem
+        Set objItem = New Item
+        objItem.Name = "+5 Dexterity Vest"
+        objItem.Sellin = 11
+        objItem.Quality = 10
+        sut.Items.Add sut.Items.Count, objItem    
+
+		'ACT
+		Dim actualSellin
+        sut.UpdateQuality()
+        actualSellin = sut.Items(0).Sellin
+
+		'ASSERT
+		
+		oTestResult.AssertEquals expectedSellin, actualSellin, "Error Item Standard Sellin Disminuye"
 	End Sub
 
 End Class

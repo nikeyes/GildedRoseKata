@@ -103,6 +103,120 @@
 	}
 
 	[TestMethod]
+	[TestCategory("Dado_Un_Item_Backstage_Cuando_Se_Actualiza_Tests")]
+	public void Dado_Un_Item_Backstage_Cuando_Se_Actualiza_Tests_Y_10_Dias_O_Menos_Venta_Entonces_Calidad_Incrementa_2Test()
+	{
+		StringBuilder urlAspUnitTest = new StringBuilder(); 
+		urlAspUnitTest.Append(BASE_URL);
+		urlAspUnitTest.Append("&cboTestContainers=");
+		urlAspUnitTest.Append("Dado_Un_Item_Backstage_Cuando_Se_Actualiza_Tests");            
+		urlAspUnitTest.Append("&cboTestCases=");
+		urlAspUnitTest.Append("Y_10_Dias_O_Menos_Venta_Entonces_Calidad_Incrementa_2");
+		urlAspUnitTest.Append("&chkShowSuccess=on");
+		urlAspUnitTest.Append("&cmdRun=Run%20Tests");
+
+
+		WebRequest request = WebRequest.Create(urlAspUnitTest.ToString());
+
+		ICredentials requestCredentials = CredentialCache.DefaultCredentials;
+		request.Credentials = requestCredentials;
+
+		using (WebResponse response = request.GetResponse())
+		{
+			using (StreamReader stream = new StreamReader(response.GetResponseStream()))
+			{
+				string json = stream.ReadToEnd();
+
+				List<TestResult> results = JsonConvert.DeserializeObject<List<TestResult>>(json);;
+
+				foreach (TestResult result in results)
+				{
+					Assert.IsTrue(result.ResultType == "Success", result.Description);
+				}
+				//Assert.IsFalse(html.Contains("Failure"));
+				//Assert.IsFalse(html.Contains("Error"));
+			}
+		}
+
+	}
+
+	[TestMethod]
+	[TestCategory("Dado_Un_Item_Backstage_Cuando_Se_Actualiza_Tests")]
+	public void Dado_Un_Item_Backstage_Cuando_Se_Actualiza_Tests_Y_3_Dias_O_Menos_Venta_Entonces_Calidad_Incrementa_5Test()
+	{
+		StringBuilder urlAspUnitTest = new StringBuilder(); 
+		urlAspUnitTest.Append(BASE_URL);
+		urlAspUnitTest.Append("&cboTestContainers=");
+		urlAspUnitTest.Append("Dado_Un_Item_Backstage_Cuando_Se_Actualiza_Tests");            
+		urlAspUnitTest.Append("&cboTestCases=");
+		urlAspUnitTest.Append("Y_3_Dias_O_Menos_Venta_Entonces_Calidad_Incrementa_5");
+		urlAspUnitTest.Append("&chkShowSuccess=on");
+		urlAspUnitTest.Append("&cmdRun=Run%20Tests");
+
+
+		WebRequest request = WebRequest.Create(urlAspUnitTest.ToString());
+
+		ICredentials requestCredentials = CredentialCache.DefaultCredentials;
+		request.Credentials = requestCredentials;
+
+		using (WebResponse response = request.GetResponse())
+		{
+			using (StreamReader stream = new StreamReader(response.GetResponseStream()))
+			{
+				string json = stream.ReadToEnd();
+
+				List<TestResult> results = JsonConvert.DeserializeObject<List<TestResult>>(json);;
+
+				foreach (TestResult result in results)
+				{
+					Assert.IsTrue(result.ResultType == "Success", result.Description);
+				}
+				//Assert.IsFalse(html.Contains("Failure"));
+				//Assert.IsFalse(html.Contains("Error"));
+			}
+		}
+
+	}
+
+	[TestMethod]
+	[TestCategory("Dado_Un_Item_Backstage_Cuando_Se_Actualiza_Tests")]
+	public void Dado_Un_Item_Backstage_Cuando_Se_Actualiza_Tests_Y_Despues_Concierto_Entonces_Calidad_0Test()
+	{
+		StringBuilder urlAspUnitTest = new StringBuilder(); 
+		urlAspUnitTest.Append(BASE_URL);
+		urlAspUnitTest.Append("&cboTestContainers=");
+		urlAspUnitTest.Append("Dado_Un_Item_Backstage_Cuando_Se_Actualiza_Tests");            
+		urlAspUnitTest.Append("&cboTestCases=");
+		urlAspUnitTest.Append("Y_Despues_Concierto_Entonces_Calidad_0");
+		urlAspUnitTest.Append("&chkShowSuccess=on");
+		urlAspUnitTest.Append("&cmdRun=Run%20Tests");
+
+
+		WebRequest request = WebRequest.Create(urlAspUnitTest.ToString());
+
+		ICredentials requestCredentials = CredentialCache.DefaultCredentials;
+		request.Credentials = requestCredentials;
+
+		using (WebResponse response = request.GetResponse())
+		{
+			using (StreamReader stream = new StreamReader(response.GetResponseStream()))
+			{
+				string json = stream.ReadToEnd();
+
+				List<TestResult> results = JsonConvert.DeserializeObject<List<TestResult>>(json);;
+
+				foreach (TestResult result in results)
+				{
+					Assert.IsTrue(result.ResultType == "Success", result.Description);
+				}
+				//Assert.IsFalse(html.Contains("Failure"));
+				//Assert.IsFalse(html.Contains("Error"));
+			}
+		}
+
+	}
+
+	[TestMethod]
 	[TestCategory("Dado_Un_Item_Standard_Cuando_Se_Actualiza_Tests")]
 	public void Dado_Un_Item_Standard_Cuando_Se_Actualiza_Tests_Entonces_Calidad_Item_Menos_1Test()
 	{

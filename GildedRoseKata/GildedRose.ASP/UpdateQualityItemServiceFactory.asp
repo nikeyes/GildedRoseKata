@@ -2,6 +2,8 @@
 <!-- #include virtual="UpdateQualitySulfurasItemService.asp"-->
 <!-- #include virtual="UpdateQualityBackstagePassesItemService.asp"-->
 <!-- #include virtual="UpdateQualityStandardItemService.asp"-->
+<!-- #include virtual="UpdateQualityConjuredItemService.asp"-->
+
 <%
    Class UpdateQualityItemServiceFactory
         Public Function CreateUpdateQualityItemService(item)
@@ -11,6 +13,8 @@
                 Set CreateUpdateQualityItemService = new UpdateQualitySulfurasItemService
             ElseIf (item.Name = "Backstage passes to a TAFKAL80ETC concert") Then
                 Set CreateUpdateQualityItemService = new UpdateQualityBackstagePassesItemService
+            ElseIf (item.Name = "Conjured Mana Cake") Then
+                Set CreateUpdateQualityItemService = new UpdateQualityConjuredItemService
             Else
                 Set CreateUpdateQualityItemService = new UpdateQualityStandardItemService
             End If

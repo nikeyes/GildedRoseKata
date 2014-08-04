@@ -64,12 +64,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="defaultController.asp" />
-    <Content Include="UpdateQualityConjuredItemService.asp" />
-    <Content Include="UpdateQualityBackstagePassesItemService.asp" />
-    <Content Include="UpdateQualitySulfurasItemService.asp" />
-    <Content Include="UpdateQualityItemServiceFactory.asp" />
-    <Content Include="UpdateQualityAgedBrieItemService.asp" />
-    <Content Include="UpdateQualityStandardItemService.asp" />
+    <Content Include="Strategies\UpdateQualityConjuredItemStrategy.asp" />
+    <Content Include="Strategies\UpdateQualityBackstagePassesItemStrategy.asp" />
+    <Content Include="Strategies\UpdateQualitySulfurasItemStrategy.asp" />
+    <Content Include="UpdateQualityItemStrategyFactory.asp" />
+    <Content Include="Strategies\UpdateQualityAgedBrieItemStrategy.asp" />
+    <Content Include="Strategies\UpdateQualityStandardItemStrategy.asp" />
     <Content Include="web.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>

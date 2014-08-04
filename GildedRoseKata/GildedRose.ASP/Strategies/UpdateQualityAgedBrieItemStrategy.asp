@@ -1,5 +1,5 @@
 ﻿<%
-   Class UpdateQualityStandardItemService
+   Class UpdateQualityAgedBrieItemStrategy
          Public Sub UpdateItem(item)
              UpdateQuality(item)   
              UpdateItemSellin(item)
@@ -10,13 +10,8 @@
         End Sub
 
         Private Sub UpdateQuality(item)
-            item.Quality = item.Quality - 1
-            If (item.Sellin = 0) Then
-                item.Quality = item.Quality - 1
-            End If
-    
-            If (item.Quality < 0) Then
-                item.Quality = 0
+            If (item.Quality < 50) Then
+                item.Quality = item.Quality + 1
             End If
         End Sub
     End Class

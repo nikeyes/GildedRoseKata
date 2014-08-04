@@ -1,5 +1,5 @@
 ﻿<%
-   Class UpdateQualitySulfurasItemService
+   Class UpdateQualitySulfurasItemStrategy
          Public Sub UpdateItem(item)
              
         End Sub

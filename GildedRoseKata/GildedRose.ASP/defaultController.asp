@@ -1,4 +1,4 @@
-﻿<!-- #include virtual="UpdateQualityItemServiceFactory.asp"-->
+﻿<!-- #include virtual="UpdateQualityItemStrategyFactory.asp"-->
 <%
       Class Program
 
@@ -11,13 +11,13 @@
         Public Sub UpdateQuality()
             Dim i
             Dim item
-            Dim service
+            Dim strategy
             Dim factory
-            Set factory = new UpdateQualityItemServiceFactory
+            Set factory = new UpdateQualityItemStrategyFactory
             For i = 0 To Items.Count - 1 Step i + 1
                  Set item = Items(i)
-                 Set service = factory.CreateUpdateQualityItemService(item)
-                 service.UpdateItem(item)
+                 Set strategy = factory.CreateUpdateQualityItemStrategy(item)
+                 strategy.UpdateItem(item)
             Next
         End Sub
 

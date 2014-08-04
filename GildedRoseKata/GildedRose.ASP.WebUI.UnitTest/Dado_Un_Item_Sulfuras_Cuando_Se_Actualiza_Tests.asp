@@ -2,7 +2,7 @@
 Class Dado_Un_Item_Sulfuras_Cuando_Se_Actualiza_Tests
 
 	Public Function TestCaseNames()
-		TestCaseNames = Array("Entonces_Calidad_Nunca_Disminuye, Entonces_Sellin_No_Disminuye")
+		TestCaseNames = Array("Entonces_Calidad_Nunca_Disminuye", "Entonces_Sellin_No_Disminuye")
 	End Function
 
 	Public Sub SetUp()

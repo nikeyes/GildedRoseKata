@@ -2,7 +2,7 @@
 Class Dado_Un_Item_Backstage_Cuando_Se_Actualiza_Tests
 
 	Public Function TestCaseNames()
-		TestCaseNames = Array("Y_10_Dias_O_Menos_Venta_Entonces_Calidad_Incrementa_2, Y_3_Dias_O_Menos_Venta_Entonces_Calidad_Incrementa_5, Y_Despues_Concierto_Entonces_Calidad_0")
+		TestCaseNames = Array("Y_10_Dias_O_Menos_Venta_Entonces_Calidad_Incrementa_2", "Y_3_Dias_O_Menos_Venta_Entonces_Calidad_Incrementa_5", "Y_Despues_Concierto_Entonces_Calidad_0")
 	End Function
 
 	Public Sub SetUp()

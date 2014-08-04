@@ -2,7 +2,7 @@
 Class Dado_Un_Item_Standard_Cuando_Se_Actualiza_Tests
 
 	Public Function TestCaseNames()
-		TestCaseNames = Array("Entonces_Calidad_Item_Menos_1, Y_Pasada_Fecha_Venta_Entonces_Calidad_Item_Menos_2, Entonces_Calidad_Nunca_Menor_Cero, Entonces_Sellin_Disminuye_En_1")
+		TestCaseNames = Array("Entonces_Calidad_Item_Menos_1", "Y_Pasada_Fecha_Venta_Entonces_Calidad_Item_Menos_2", "Entonces_Calidad_Nunca_Menor_Cero", "Entonces_Sellin_Disminuye_En_1")
 	End Function
 
 	Public Sub SetUp()

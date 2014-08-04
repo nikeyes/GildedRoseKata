@@ -7,13 +7,13 @@
 <%
    Class UpdateQualityItemStrategyFactory
         Public Function CreateUpdateQualityItemStrategy(item)
-            If (item.Name = "Aged Brie") Then
+            If (instr(item.Name,"Aged Brie")) Then
                 Set CreateUpdateQualityItemStrategy = new UpdateQualityAgedBrieItemStrategy
-            ElseIf (item.Name = "Sulfuras, Hand of Ragnaros") Then
+            ElseIf (instr(item.Name, "Sulfuras")) Then
                 Set CreateUpdateQualityItemStrategy = new UpdateQualitySulfurasItemStrategy
-            ElseIf (item.Name = "Backstage passes to a TAFKAL80ETC concert") Then
+            ElseIf (instr(item.Name, "Backstage passes")) Then
                 Set CreateUpdateQualityItemStrategy = new UpdateQualityBackstagePassesItemStrategy
-            ElseIf (item.Name = "Conjured Mana Cake") Then
+            ElseIf (instr(item.Name, "Conjured")) Then
                 Set CreateUpdateQualityItemStrategy = new UpdateQualityConjuredItemStrategy
             Else
                 Set CreateUpdateQualityItemStrategy = new UpdateQualityStandardItemStrategy

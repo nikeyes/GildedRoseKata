@@ -3,7 +3,7 @@
 Class Dado_Un_Item_AgedBrie_Cuando_Se_Actualiza_Tests
 
 	Public Function TestCaseNames()
-		TestCaseNames = Array("Entonces_Calidad_Item_Mas_1, Entonces_Calidad_Nunca_Mayor_50")
+		TestCaseNames = Array("Entonces_Calidad_Item_Mas_1", "Entonces_Calidad_Nunca_Mayor_50")
 	End Function
 
 	Public Sub SetUp()

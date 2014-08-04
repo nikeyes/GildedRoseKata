@@ -1,5 +1,4 @@
 ﻿<!-- #include virtual="UpdateQualityItemServiceFactory.asp"-->
-<!-- #include virtual="UpdateQualityStandardItemService.asp"-->
 <%
       Class Program
 

@@ -16,12 +16,16 @@ Class Item
         i_sellin = i_value
     End Property
 
-        Private i_quality   
-        Public Property Get Quality()
-            Quality = i_quality
+    Private i_quality   
+    Public Property Get Quality()
+        Quality = i_quality
     End Property
     Public Property Let Quality(i_value)
         i_quality = i_value
     End Property
+
+    Public Function ToString()
+        ToString = s_name & "#" & i_sellin & "#" & i_quality
+    End Function
 End Class
 %>

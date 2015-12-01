@@ -106,6 +106,7 @@
     End Class   
 
     Dim AdminPanel
+    Set AdminPanel = new GildedRoseAdminPanel
 %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -116,8 +117,6 @@
 <body>
     <h1>Wellcome to Gilded Rose Administrator Panel</h1>
     <h2>Update Items Log</h2>
-
-    <% Set AdminPanel = new GildedRoseAdminPanel %>
     <ul>
         <li>
             Número de items antes de actualizar: <%= Items.Count %>

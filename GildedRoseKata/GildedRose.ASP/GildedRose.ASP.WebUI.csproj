@@ -60,10 +60,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ProgramacionEstructurada\default.asp" />
+    <Content Include="ProgramacionEstructurada\index.asp" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ProgramacionOO\default.asp" />
+    <Content Include="ProgramacionOO\index.asp" />
+    <Content Include="ProgramacionOO\GildedRoseAdminPanel.asp" />
     <Content Include="ProgramacionOO\Item.asp" />
     <Content Include="web.config" />
     <None Include="web.Debug.config">

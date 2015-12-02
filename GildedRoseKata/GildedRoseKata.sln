@@ -3,11 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enunciado", "Enunciado", "{5DFDAAE6-02F2-46B2-A772-01788B0B46E0}"
-	ProjectSection(SolutionItems) = preProject
-		Enunciado\GildedRoseKata.docx = Enunciado\GildedRoseKata.docx
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose.CSharp.WebUI", "GildedRose.CSharp.WebUI\GildedRose.CSharp.WebUI.csproj", "{7F6A3316-C629-4E3C-8378-8BA3E28F453A}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GildedRose.VB.WebUI", "GildedRose.VB.WebUI\GildedRose.VB.WebUI.vbproj", "{113D4BCE-03A9-450E-9FA1-4CDBA6834EC5}"

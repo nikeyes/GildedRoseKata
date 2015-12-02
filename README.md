@@ -3,7 +3,7 @@ Gilded Rose Kata
 Basada en la Kata original de Terry Hughes (https://twitter.com/TerryHughes), disponible en su [GitHub](https://github.com/NotMyself/GildedRose)
 
 He modificado la Kata para mostrar que los lenguajes de programación no son el problema para hacer un código mantenible.
-No es tan importante si el lenguaje es moderno o antiguo, sino si se aplican bien los conceptos de orientación a objetos y los principios SOLID.
+No es tan importante si el lenguaje es moderno o antiguo, sino si se aplican bien los conceptos de orientación a objetos, principios SOLID y patrones de diseño.
 
 Hay 4 ejemplos disponibles:
 - **Classic ASP - con Progración Estructurada** (GildedRose.ASP_Estructurada.WebUI)

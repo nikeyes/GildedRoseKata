@@ -1,16 +1,16 @@
 Gilded Rose Kata
 ==============
-Basada en al Kata original de Terry Hughes (https://twitter.com/TerryHughes). Puedes visitar su [GitHub!](https://github.com/NotMyself/GildedRose)
+Basada en al Kata original de Terry Hughes (https://twitter.com/TerryHughes), disponible en su [GitHub](https://github.com/NotMyself/GildedRose)
 
 He modificado la Kata para mostrar que los lenguajes de programación no son el problema para hacer un código mantenible.
-No importa tanto si el lenguaje es mñas moderno o más antiguo sino si se aplican bien los conceptos de orientación a objetos y principios SOLID.
+No es tan importante si el lenguaje es moderno o antiguo, sino si se aplican bien los conceptos de orientación a objetos y los principios SOLID.
 
-Disponemos de 4 ejemplos:
-- Classic ASP - progración estructurada (Carpeta GildedRose.ASP_Estructurada.WebUI)
-- Classic ASP - Programación Orientada a Objetos (Carpeta GildedRose.ASP_OOP.WebUI)
-- VB.Net (Carpeta GildedRose.VB.WebUI)
-- C# (Carpeta GildedRose.CSharp.WebUI)
+Hay 4 ejemplos disponibles:
+- **Classic ASP - con Progración Estructurada** (GildedRose.ASP_Estructurada.WebUI)
+- **Classic ASP - con Programación Orientada a Objetos** (GildedRose.ASP_OOP.WebUI)
+- **VB.Net** (Carpeta GildedRose.VB.WebUI)
+- **C#** (Carpeta GildedRose.CSharp.WebUI)
 
-AunqueC# y VB.Net son lenguaje puramentes orientados a objectos y Classic ASP sea un lenguaje interpretado con pocas características de orientación a objectos, el código inicial es prácticamente idéntico (teniendo en cuenta las diferencias de sintaxis).
+Aunque C# y VB.Net son lenguaje puramentes orientados a objectos y Classic ASP sea un lenguaje interpretado con pocas características de orientación a objectos, el código inicial es prácticamente idéntico (solo hay diferencias en la sintaxis).
 
-El enunciado en inglés y castellano está disponible [aquí](https://github.com/nikeyes/GildedRoseKata/tree/master/GildedRoseKata/Enunciado).
+El enunciado de la kata está disponible en ingles y castellano [aquí](https://github.com/nikeyes/GildedRoseKata/tree/master/GildedRoseKata/Enunciado).

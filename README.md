@@ -14,3 +14,5 @@ Hay 4 ejemplos disponibles:
 Aunque C# y VB.Net son lenguaje puramentes orientados a objectos y Classic ASP sea un lenguaje interpretado con pocas características de orientación a objectos, el código inicial es prácticamente idéntico (solo hay diferencias en la sintaxis).
 
 El enunciado de la kata está disponible en ingles y castellano [aquí](https://github.com/nikeyes/GildedRoseKata/tree/master/GildedRoseKata/Enunciado).
+
+Nota: Si se quieren crear los tests unitarios en Classic ASP se puede utilizar (http://aspunit.sourceforge.net/) o su integración en Visual Studio con MsTest (https://github.com/nikeyes/ASPClassicUnitTest)

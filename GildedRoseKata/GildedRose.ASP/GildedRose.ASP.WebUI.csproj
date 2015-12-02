@@ -63,7 +63,7 @@
     <Content Include="ProgramacionEstructurada\index.asp" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ProgramacionOO\index.asp" />
+    <Content Include="ProgramacionOO\Index.asp" />
     <Content Include="ProgramacionOO\GildedRoseAdminPanel.asp" />
     <Content Include="ProgramacionOO\Item.asp" />
     <Content Include="web.config" />

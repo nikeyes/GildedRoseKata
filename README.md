@@ -1,4 +1,4 @@
-GildedRoseKata
+Gilded Rose Kata
 ==============
 Basada en al Kata original de Terry Hughes (https://twitter.com/TerryHughes). Puedes visitar su [GitHub!](https://github.com/NotMyself/GildedRose)
 
@@ -11,5 +11,4 @@ Partimos de 4 ejemplos:
 
 AunqueC# y VB.Net son lenguaje puramentes orientados a objectos y Classic ASP sea un lenguaje interpretado y no tenga todas las características de orientación a objectos, el código inicial es prácticamente idéntico (teniendo en cuenta las diferencias de sintaxis).
 
-
-El enunciado está disponible en:   GildedRoseKata / GildedRoseKata / Enunciado /
+El enunciado está disponible (aquí)[https://github.com/nikeyes/GildedRoseKata/tree/master/GildedRoseKata/Enunciado]. La primera página es eñ enunciado original en inglés y la segunda en castellano.

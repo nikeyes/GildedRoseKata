@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9FA77595-32BC-4B10-BCC6-197B024CB799}</ProjectGuid>
+    <ProjectGuid>{0075F4C7-DED3-4CC8-86F1-B53C962B9A6B}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GildedRose.ASP.WebUI</RootNamespace>
-    <AssemblyName>GildedRose.ASP.WebUI</AssemblyName>
+    <RootNamespace>GildedRose.ASP_OOP.WebUI</RootNamespace>
+    <AssemblyName>GildedRose.ASP_OOP.WebUI</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -60,19 +60,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ProgramacionEstructurada\index.asp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ProgramacionOO\Index.asp" />
-    <Content Include="ProgramacionOO\GildedRoseAdminPanel.asp" />
-    <Content Include="ProgramacionOO\Item.asp" />
-    <Content Include="web.config" />
-    <None Include="web.Debug.config">
-      <DependentUpon>web.config</DependentUpon>
-    </None>
-    <None Include="web.Release.config">
-      <DependentUpon>web.config</DependentUpon>
-    </None>
+    <Content Include="Views\GildedRoseAdminPanel.asp" />
+    <Content Include="Views\Index.asp" />
+    <Content Include="Views\Item.asp" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

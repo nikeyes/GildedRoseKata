@@ -10,7 +10,7 @@ namespace GildedRose.CSharp.WebUI.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return View("~/GildedRose/Index.cshtml");
         }
     }
 }

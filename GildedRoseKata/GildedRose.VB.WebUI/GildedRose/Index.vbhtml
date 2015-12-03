@@ -1,13 +1,12 @@
-﻿@using GildedRose.CSharp.WebUI.Views.Home
-@{
-    GildedRoseAdminPanel AdminPanel = new GildedRoseAdminPanel();
-    List<Item> ItemList = AdminPanel.Items;
-}
+﻿@Code
+    Dim AdminPanel As GildedRoseAdminPanel = New GildedRoseAdminPanel()
+    Dim ItemList As List(Of Item) = AdminPanel.Items
+End Code
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>GildedRose.VB.WebUI</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 </head>
 <body>
@@ -18,21 +17,24 @@
             Número de items antes de actualizar: @ItemList.Count
         </li>
         <li>
-            Aged Brie vale: @ItemList[1].ToString()
+            Aged Brie vale: @ItemList(1).ToString()
         </li>
     </ul>
 
     <p>Actualizando....</p>
 
-    @{AdminPanel.UpdateQuality();}
+    @Code
+        AdminPanel.UpdateQuality()
+    End Code
 
     <ul>
         <li>
             Número de items después de actualizar: @ItemList.Count
         </li>
         <li>
-            Aged Brie vale: @ItemList[1].ToString()
+            Aged Brie vale: @ItemList(1).ToString()
         </li>
     </ul>
 </body>
 </html>
+

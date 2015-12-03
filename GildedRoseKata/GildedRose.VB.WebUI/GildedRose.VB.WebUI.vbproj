@@ -122,8 +122,6 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\FilterConfig.vb" />
-    <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -143,8 +141,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Controllers\HomeController.vb" />
-    <Compile Include="Views\Home\GildedRoseAdminPanel.vb" />
-    <Compile Include="Views\Home\Item.vb" />
+    <Compile Include="GildedRose\GildedRoseAdminPanel.vb" />
+    <Compile Include="GildedRose\Item.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -166,7 +164,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -175,8 +172,8 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Home\Index.vbhtml" />
-    <Content Include="Views\Web.config" />
+    <Content Include="GildedRose\Index.vbhtml" />
+    <Content Include="GildedRose\Web.config" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharpcore", "csharpcore.csproj", "{F46229C8-DAF2-4C10-A68E-A4DE9A5960F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharpcore", "src\csharpcore.csproj", "{F46229C8-DAF2-4C10-A68E-A4DE9A5960F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,20 @@
+name: GILDEDROSEKATA-CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.102
+      - name: Set environment
+        run: set ASPNETCORE_ENVIRONMENT=Development
+      - name: Build with dotnet
+        run: dotnet build GildedRoseKata/webapicore/src/GildedRoseKata.Api.sln --configuration Debug
+      - name: Run Tests
+        run: dotnet test GildedRoseKata/webapicore/src/GildedRoseKata.Api.sln

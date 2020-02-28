@@ -49,6 +49,7 @@ namespace GildedRoseKata.Api.Repository
         }
         public Item GetByName(string name)
         {
+            if (string.IsNullOrEmpty(name)) throw new ArgumentException("name cannot be null or empty");
             return context.FirstOrDefault(e => e.Name == name);
         }
         public void UpdateQuality()

@@ -13,7 +13,7 @@ namespace GildedRoseKata.Api.Tests.Integration.Controllers
     {
         private readonly TestServer testServer;
         private const HttpStatusCode EXPECTED_STATUS_CODE = HttpStatusCode.OK;
-        private const int EXPECTED_ITEMS_COUNT = 8;
+        private const int EXPECTED_ITEMS_COUNT = 9;
 
         public ItemControllerShould()
         {

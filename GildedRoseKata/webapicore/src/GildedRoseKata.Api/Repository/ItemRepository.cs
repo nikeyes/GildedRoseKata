@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using GildedRoseKata.Api.Model;
 
 namespace GildedRoseKata.Api.Repository
@@ -39,8 +40,16 @@ namespace GildedRoseKata.Api.Repository
 				new Item {Name = "Conjured Mana Cake", SellIn = 3, Quality = 6}
             };
         }
+        public ItemRepository(IList<Item> context)
+        {
+           this.context = context;
+        }
         public IList<Item> GetAll(){
-            return this.context;
+            return context;
+        }
+        public Item GetByName(string name)
+        {
+            return context.FirstOrDefault(e => e.Name == name);
         }
         public void UpdateQuality()
         {

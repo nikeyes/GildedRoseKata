@@ -20,6 +20,13 @@ namespace GildedRoseKata.Api.Controllers
             return Ok(items);
         }
 
+        [HttpGet("{name}")]
+        public ActionResult GetByName(string name)
+        {
+            return BadRequest("Missing implementation");
+        }
+        
+
         [HttpPut]
         public ActionResult Put(){
             

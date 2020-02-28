@@ -36,7 +36,7 @@ namespace GildedRoseKata.Api.Tests.Integration.Controllers
 
             // Assert 
             Assert.True(currentResult.StatusCode == EXPECTED_STATUS_CODE);
-            Assert.True(items.Count == EXPECTED_ITEMS_COUNT);
+            Assert.True(items.Count == 0);
         }
     }
 }

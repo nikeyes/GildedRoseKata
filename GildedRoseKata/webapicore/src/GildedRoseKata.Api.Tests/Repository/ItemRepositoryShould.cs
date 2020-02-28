@@ -65,11 +65,17 @@ namespace GildedRoseKata.Api.Tests.Repository
         [Fact]
         public void Throw_if_name_is_empty()
         {
+            var repository = new ItemRepository(context);
+            Assert.Throws<ArgumentException>(() => repository.GetByName(string.Empty));
         }
 
         [Fact]
         public void Throw_if_name_is_null()
-        { 
+        {
+            var repository = new ItemRepository(context);
+            Assert.Throws<ArgumentException>(() => repository.GetByName(null));
+
+
         }
     }   
 }

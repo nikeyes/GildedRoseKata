@@ -32,6 +32,20 @@ namespace GildedRoseKata.Api.Tests.Integration.Controllers
             // Assert
             Assert.True(currentResult.StatusCode == EXPECTED_STATUS_CODE);
         }
+        [Fact]
+        public async Task Return_bad_request_result_when_calling_get()
+        {
+            // Arrange
+            var httpClient = testServer.CreateClient();
+
+            // Act
+            var currentResult = await httpClient.GetAsync("/test2");
+
+            // Assert
+            Assert.True(currentResult.StatusCode == HttpStatusCode.NotFound);
+        }
+
+
 
 
     }

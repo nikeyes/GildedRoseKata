@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp", "src\csharp.csproj", "{176C0214-9136-4079-8DAB-11D7420C3881}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp", "src\GildedRoseStore\csharp.csproj", "{176C0214-9136-4079-8DAB-11D7420C3881}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRoseStore.UnitTests", "GildedRoseStore.UnitTests\GildedRoseStore.UnitTests.csproj", "{104888B5-819A-45BE-8C3A-48DBA9B402DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{176C0214-9136-4079-8DAB-11D7420C3881}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{176C0214-9136-4079-8DAB-11D7420C3881}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{176C0214-9136-4079-8DAB-11D7420C3881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{104888B5-819A-45BE-8C3A-48DBA9B402DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104888B5-819A-45BE-8C3A-48DBA9B402DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104888B5-819A-45BE-8C3A-48DBA9B402DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104888B5-819A-45BE-8C3A-48DBA9B402DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,16 @@
+{
+  "name": "end2end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cypress run",
+    "cypress:open": "./node_modules/.bin/cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.0.2"
+  }
+}

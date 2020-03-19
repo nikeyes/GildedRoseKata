@@ -1,0 +1,12 @@
+target 'GildedRoseApp' do
+  use_frameworks!
+
+  # Pods for MyApp 
+
+  target 'GildedRoseTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'ApprovalTests_Swift', :git => 'https://github.com/approvals/ApprovalTests.Swift.git'
+  end
+
+end
